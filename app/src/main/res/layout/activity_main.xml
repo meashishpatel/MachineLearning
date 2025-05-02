@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/faceDetection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Face Detection"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/realTimefaceDetection"/>
+
+    <Button
+        android:id="@+id/realTimefaceDetection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Real Time Face Detection"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/textRecognition"
+        app:layout_constraintTop_toBottomOf="@id/faceDetection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/textRecognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Text Detection"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/RealtimetextRecognition"
+        app:layout_constraintTop_toBottomOf="@id/realTimefaceDetection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/RealtimetextRecognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Real Time Text Detection"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/ObjectRecognition"
+        app:layout_constraintTop_toBottomOf="@id/textRecognition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ObjectRecognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Real Object Detection"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/smartReplies"
+        app:layout_constraintTop_toBottomOf="@id/RealtimetextRecognition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/smartReplies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Get Smart Replies"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/ObjectRecognition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/faceMeshDetection"/>
+    <Button
+        android:id="@+id/faceMeshDetection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Face Mesh Detection"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/documentScanner"
+        app:layout_constraintTop_toBottomOf="@id/smartReplies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/documentScanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Document Scanner"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/translation"
+        app:layout_constraintTop_toBottomOf="@id/faceMeshDetection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/translation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Translation"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/languageIdentification"
+        app:layout_constraintTop_toBottomOf="@id/documentScanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/languageIdentification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Language Identification"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/entityExtraction"
+        app:layout_constraintTop_toBottomOf="@id/translation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/entityExtraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Entity Extraction"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/languageIdentification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
